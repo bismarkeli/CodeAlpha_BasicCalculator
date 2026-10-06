@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaCalc</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <h1>MegaCalc</h1>
+    <div class="calculator">
+        <!--Display Screen-->
+        <div id="display" class="calculator-screen">
+            <div id="previous-operand" class="previous-operand"></div>
+            <div id="current-operand" class="current-operand">0</div>
+        </div>
+
+        <div class="keypad">
+            <!--Function Buttons-->
+            <button class="btn clear" data-action="clear">AC</button>
+            <button class="btn operator" data-action="delete">C</button>
+            <button class="btn operator" data-action="divide">÷</button>
+            <button class="btn operator" data-action="multiply">×</button>
+            
+            <!--Number and Operator Buttons-->
+            <button class="btn numbers" data-number="7">7</button>
+            <button class="btn numbers" data-number="8">8</button>
+            <button class="btn numbers" data-number="9">9</button>
+            <button class="btn operator" data-action="subtract">-</button>
+
+            <button class="btn numbers" data-number="4">4</button>
+            <button class="btn numbers" data-number="5">5</button>
+            <button class="btn numbers" data-number="6">6</button>
+            <button class="btn operator" data-action="add">+</button>
+
+            <button class="btn numbers" data-number="1">1</button>
+            <button class="btn numbers" data-number="2">2</button>
+            <button class="btn numbers" data-number="3">3</button>
+            <button class="btn equals" data-action="calculate" style="grid-row: span 2;">=</button>
+
+            <button class="btn numbers" data-action="percentage">%</button>
+            <button class="btn numbers" data-number="0">0</button>
+            <button class="btn numbers" data-number=".">.</button>
+        </div>
+
+    </div>
+
+
+ <script src="script.js"></script>
+</body>
+
+</html>
